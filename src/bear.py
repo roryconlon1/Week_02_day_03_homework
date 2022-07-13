@@ -13,4 +13,5 @@ class Bear:
     def food_count(self):
         return len(self.can_eat)
 
-    
+    # def food_from_river(self, river_fish):
+    #     return self.stomach.append(river_fish)

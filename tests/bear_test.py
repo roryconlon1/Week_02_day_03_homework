@@ -8,6 +8,7 @@ class TestBear(unittest.TestCase):
 
     def setUp(self):
         self.bear = Bear("Grylls", "Polar")
+        self.fish = Fish("salmon")
 
     def test_get_bear_name(self):
         self.assertEqual("Grylls", self.bear.name)
@@ -22,5 +23,8 @@ class TestBear(unittest.TestCase):
     def test_bear_food_count(self):
         self.assertEqual([], self.bear.stomach)
         
+    # def test_bear_eat_from_river(self):
+    #     self.bear.food_from_river("salmon")
+    #     self.assertEqual(["salmon"], self.bear.stomach)
     
 
