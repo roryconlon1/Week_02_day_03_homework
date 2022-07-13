@@ -6,8 +6,12 @@ class TestRiver(unittest.TestCase):
     
 
     def setUp(self):
-        self.river = River("salmon")
+        self.river = River("white cart", "salmon")
         self.fish = Fish("haddock")
+    
+    def test_has_name(self):
+        self.assertEqual("white cart", self.river.name)
+    
     def test_river_has_fish(self):
         self.assertEqual(["salmon"], self.river.fishes)
 
